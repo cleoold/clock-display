@@ -23,9 +23,7 @@ const s = StyleSheet.create({
   }
 });
 
-function twoDigits(n: number | string): string {
-  return ('0' + n).slice(-2);
-}
+const twoDigits = (n: number | string) => ('0' + n).slice(-2);
 
 export default class Ticker extends React.PureComponent<ITimerProp, ITimerState> {
   static monthNames = [
